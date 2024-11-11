@@ -1,0 +1,171 @@
+#footer {
+  padding: 0 4%;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+
+  .__footer-box {
+    border-bottom: 1px solid #eeeeeec5;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    .__list {
+      .__v {
+        display: flex;
+        gap: 4rem;
+      }
+
+      .__logo {
+        img {
+          width: 80px;
+        }
+      }
+
+      p {
+        font-size: 15.5px;
+      }
+
+      h3 {
+        color: #6824d6;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+      }
+
+      li {
+        margin-top: 0.6rem;
+        font-size: 15.5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          color: #000;
+        }
+
+        a {
+          margin-top: 5px;
+          i {
+            font-size: 22px;
+            color: #6824d6;
+          }
+        }
+      }
+
+      li:hover {
+        a {
+          transform: translateX(10px);
+
+          span {
+            color: #6824d6;
+            cursor: pointer;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .list-last {
+      display: flex;
+      justify-content: end;
+    }
+
+    .list-center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .__copyright {
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .__left {
+      img {
+        width: 130px;
+        margin-bottom: 5px;
+      }
+    }
+
+    .__right {
+      /* CSS */
+      .button-50 {
+        appearance: button;
+        background-color: #6824d6;
+        background-image: none;
+        border: 1px solid #6824d6;
+        border-radius: 4px;
+        box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0 5px 10px 0;
+        overflow: visible;
+        padding: 10 px 40px;
+        text-align: center;
+        text-transform: none;
+        touch-action: manipulation;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+
+      .button-50:focus {
+        text-decoration: none;
+      }
+
+      .button-50:hover {
+        text-decoration: none;
+      }
+
+      .button-50:active {
+        box-shadow: rgba(0, 0, 0, 0.125) 0 3px 5px inset;
+        outline: 0;
+      }
+
+      .button-50:not([disabled]):active {
+        box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+        transform: translate(2px, 2px);
+      }
+
+      @media (min-width: 768px) {
+        .button-50 {
+          padding: 10px 50px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 786px) {
+
+  #footer {
+
+    .__footer-box{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      
+       .__list{
+
+         .__v{
+          gap: 1rem;
+         }
+       }
+    }
+  }
+}

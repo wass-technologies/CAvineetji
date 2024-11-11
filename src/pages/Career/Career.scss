@@ -1,0 +1,324 @@
+#career-page {
+  .__hero {
+    padding: 2rem 4%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    height: 550px;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        line-height: 1.1em;
+        padding-bottom: 40px;
+        padding-bottom: 45px;
+        color: rgba(4, 4, 44, 1);
+
+        span {
+          color: #01c4a7;
+        }
+      }
+
+      p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        line-height: 1.5em;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        color: rgba(131, 134, 151, 1);
+      }
+
+      button {
+        width: fit-content;
+        height: fit-content;
+        padding: 11px 23px;
+        font-size: 14px;
+        line-height: 1.3;
+        font-weight: 500;
+        text-align: center;
+        background: #6824d6;
+        border: 1px solid #6824d6;
+        color: #fff;
+        border-radius: 10px;
+      }
+    }
+
+    .__right {
+      img {
+        height: 500px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .__open-position {
+    margin: 0px;
+    padding-top: 100px;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 140px;
+    background-color: rgba(238, 244, 253, 1);
+    max-width: 100%;
+
+    h2 {
+      font-family: "DM Sans", sans-serif;
+      font-size: 32px;
+      line-height: 1.2em;
+      font-weight: 700;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: rgba(47, 50, 62, 1);
+    }
+
+    .__open-job-container {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      .__job-box {
+        background: #fff;
+        box-shadow: 0 20px 100px rgba(40, 37, 91, 0.05);
+        border-radius: 5px;
+        padding: 50px;
+
+        .__jobname {
+          font-size: 24px;
+          color: rgba(47, 50, 62, 1);
+          font-weight: 500;
+        }
+
+        .__icon {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin: 1rem 0;
+
+          i {
+            font-size: 16px;
+            margin-right: 8px;
+            color: #6e748a;
+          }
+
+          span {
+            color: #6e748a;
+            font-size: 15px;
+            font-weight: 400;
+          }
+        }
+
+        .__action {
+          margin-top: 1.5rem;
+          margin-bottom: 1rem;
+          display: flex;
+          gap: 2rem;
+
+          button {
+            height: fit-content;
+            padding: 10px 23px;
+            font-size: 14px;
+            line-height: 1.3;
+            font-weight: 500;
+            text-align: center;
+            background: #6824d6;
+            border: 1px solid #6824d6;
+            color: #fff;
+            border-radius: 10px;
+          }
+
+          .__no-vaction {
+            h1 {
+              font-size: 32px;
+              font-weight: 700;
+              color: #ff5f74;
+              line-height: 1;
+            }
+
+            p {
+              display: block;
+              font-size: 15px;
+              font-weight: 400;
+              color: #9397a3;
+            }
+          }
+        }
+
+        .__date-posted {
+          display: block;
+          font-size: 15px;
+          font-weight: 400;
+          color: #9397a3;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .__lear-recurtmwent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    margin: 0px;
+    padding-top: 20px;
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 80px;
+    background-color: rgba(238, 244, 253, 1);
+    max-width: 100%;
+
+    .__left {
+      h1 {
+        padding-bottom: 50px;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 16px;
+        line-height: 1.7em;
+        padding-top: 0px;
+        padding-bottom: 30px;
+        color: rgba(131, 134, 151, 1);
+      }
+
+      button {
+        height: fit-content;
+        padding: 11px 23px;
+        font-size: 14px;
+        line-height: 1.3;
+        font-weight: 500;
+        text-align: center;
+        background: #6824d6;
+        border: 1px solid #6824d6;
+        color: #fff;
+        border-radius: 10px;
+      }
+    }
+
+    .__right {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      .__step-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .__box {
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+          margin-bottom: 0px;
+          padding-top: 50px;
+          padding-right: 30px;
+          padding-left: 30px;
+          padding-bottom: 50px;
+          border-radius: 10px;
+          background-image: url(https://static.live.templately.com/woocommerce/2022/10/f30fa0d5-company-career-page-v3-6.png);
+          background-position: 88% 12%;
+          background-repeat: no-repeat;
+          background-color: rgba(255, 255, 255, 1);
+
+          img {
+            border-radius: 0px;
+            width: 50px;
+            height: auto;
+            margin-bottom: 20px;
+          }
+
+          h4 {
+            font-family: "DM Sans", sans-serif;
+            font-size: 19px;
+            line-height: 1.2em;
+            font-weight: 700;
+            padding-top: 0px;
+            padding-bottom: 15px;
+            color: rgba(0, 0, 0, 1);
+          }
+
+          p {
+            font-family: "DM Sans", sans-serif;
+            font-size: 14px;
+            line-height: 1.6em;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            color: rgba(131, 134, 151, 1);
+          }
+        }
+      }
+
+      .__step-container:nth-child(2) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #career-page {
+    .__hero {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      padding: 1rem 10px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        button {
+          font-size: 16px;
+        }
+
+        h1 {
+          padding-bottom: 20px;
+          font-size: 24px;
+        }
+
+        p {
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    .__open-position {
+      padding: 10px;
+      .__open-job-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+      }
+    }
+
+    .__lear-recurtmwent {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 10px;
+      .__left {
+        text-align: center;
+      }
+
+      .__right {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+
+        .__step-container {
+          gap: 10px;
+        }
+
+        .__step-container:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .__career-registration-form .__container-form .__form {
+    width: 95%;
+  }
+}
