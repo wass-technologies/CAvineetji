@@ -19,8 +19,9 @@ import Event_Based_Company_Compliances from "../assets/Images/ServceBanner/Event
 import anual_Compliances from "../assets/Images/ServceBanner/annual-filing-of-opcjpg.jpg";
 import Appointment_and_Resignation_of_Director from "../assets/Images/ServceBanner/Appointment or Resignation of Director.jpg";
 import AA_12 from "../assets/Images/ServceBanner/12AA-Registration-Documents.jpg";
-import Annual_Filing_for_LLP from '../assets/Images/ServceBanner/llp-annual-filing.png'
-
+import Annual_Filing_for_LLP from "../assets/Images/ServceBanner/llp-annual-filing.png";
+import DIR_3_KYC_Filing_Online from "../assets/Images/ServceBanner/File-DIR-3-KYC-Form.png";
+import Conversion_of_Sole_Proprietorship from "../assets/Images/ServceBanner/SOle-to-Pvt-Ltd.webp";
 
 // Categories
 
@@ -2052,7 +2053,7 @@ export const servicesData = [
         id: "Conversion_of_Sole_Proprietorship_to_Pvt_Ltd",
 
         banner: {
-          image: registration_section_8,
+          image: Conversion_of_Sole_Proprietorship,
           title: "Conversion of Sole Proprietorship to Pvt Ltd",
 
           lists: [
@@ -3037,7 +3038,7 @@ export const servicesData = [
         id: "DIR-3_KYC_Filing_Online",
 
         banner: {
-          image: gst_registration,
+          image: DIR_3_KYC_Filing_Online,
           title: "DIR-3 KYC Filing Online",
 
           lists: [

@@ -1,29 +1,89 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import Marquee from "react-fast-marquee";
-
+import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-import whyImage from "../../assets/Images/Home/why.png";
-import faqIcon from "../../assets/Images/Home/faq.png";
-import Services from "../../components/Services/Services";
-import { Link } from "react-router-dom";
 import { servicesData } from "../../constant";
 
+import faqIcon from "../../assets/Images/Home/faq.png";
+import Services from "../../components/Services/Services";
+import avtar_icon from "../../assets/Images/Home/avatar.png";
+import googleIcon from "../../assets/Images/icons/google (1).webp";
+import audit_manager from "../../assets/Images/icons/audit-manager-compliance-.png";
+import customer_satisfaction from "../../assets/Images/icons/customer-satisfaction.png";
+import Google from "../../assets/Images/icons/Google.webp";
+import reasonable from "../../assets/Images/icons/reasonable.webp";
+import service from "../../assets/Images/icons/service.webp";
+import turn_around from "../../assets/Images/icons/turn-around-clock.png";
+import userImage from "../../assets/Images/Home/user.jpg";
+import googleImage from "../../assets/Images/icons/Google.webp";
+
 const Home = () => {
+  const [customerCount, setCustomerCount] = useState(0);
+  const targetCount = 164739;
   const data = servicesData[0].data;
 
-  // 9088639363
+  useEffect(() => {
+    const incrementTime = 50;
+    const step = Math.ceil(targetCount / 100);
+    const counter = setInterval(() => {
+      setCustomerCount((prevCount) => {
+        if (prevCount + step >= targetCount) {
+          clearInterval(counter);
+          return targetCount;
+        }
+        return prevCount + step;
+      });
+    }, incrementTime);
+  }, []);
 
   const handleLink = (id) => {
     const filteredData = data.filter((x) => x.id === id);
     localStorage.setItem("serviceData", JSON.stringify(filteredData[0]));
     window.location.href = `/service/${id}`;
   };
+
+  const testimonials = [
+    {
+      name: "Rajesh Kumar",
+      companyLogo: googleImage,
+      authorImage: userImage,
+      text: "We’ve been using this service for over a year, and we couldn't be more satisfied. Their customer support is top-notch, and the results are impressive.",
+      stars: 4,
+    },
+    {
+      name: "Sana Gupta",
+      companyLogo: googleImage,
+      authorImage: userImage,
+      text: "This tool has revolutionized our workflow! It’s intuitive and has saved us countless hours of manual work.",
+      stars: 4,
+    },
+    {
+      name: "Anil Sharma",
+      companyLogo: googleImage,
+      authorImage: userImage,
+      text: "I was impressed by the speed and ease with which they were able to help us with our project. The team is very professional.",
+      stars: 5,
+    },
+    {
+      name: "Priya Mehta",
+      companyLogo: googleImage,
+      authorImage: userImage,
+      text: "An excellent experience overall. Their team took care of everything, and the results were outstanding. Highly recommended!",
+      stars: 4,
+    },
+    {
+      name: "Vikram Patel",
+      companyLogo: googleImage,
+      authorImage: userImage,
+      text: "Amazing customer service and a very user-friendly platform. We’ve been using this for several months now, and it's been a game-changer.",
+      stars: 5,
+    },
+  ];  
 
   return (
     <div id="__home_page">
@@ -49,18 +109,13 @@ const Home = () => {
           </div>
 
           <div className="__rating">
-            <img
-              src="https://netrosystems.com/_next/image?url=%2Fimages%2Fclutch.webp&w=1920&q=75"
-              alt=""
-            />
-            <img
-              src="https://netrosystems.com/_next/image?url=%2Fimages%2Ftrustpilot.webp&w=1920&q=75"
-              alt=""
-            />
-            <img
-              src="https://netrosystems.com/_next/image?url=%2Fimages%2Fgoogle.webp&w=1920&q=75"
-              alt=""
-            />
+            <img src={avtar_icon} alt="avtar_icon" />
+
+            <div className="__happy">
+              <h2>{customerCount.toLocaleString()}</h2>
+              <p>Happy Customers</p>
+            </div>
+            <img src={googleIcon} alt="googleIcon" />
           </div>
         </div>
         <div className="__right">
@@ -80,7 +135,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="__why-box">
+        {/* <div className="__why-box">
           <div className="__left">
             <h1>28X</h1>
             <p>Higher response rate than email & digital</p>
@@ -93,6 +148,57 @@ const Home = () => {
           <div className="__left">
             <h1>17 Days</h1>
             <p>Lifespan of a postcard. seconds for email or SMS</p>
+          </div>
+        </div> */}
+
+        <div className="__choose-box">
+          <div className="__left">
+            <div className="__box">
+              <img src={service} alt="image" />
+              <h3>300+ Services</h3>
+              <p>Relax at home, we take care of Tax/Compliance</p>
+            </div>
+
+            <div className="__box">
+              <img src={reasonable} alt="image" />
+              <h3>Reasonable</h3>
+              <p>Low price with professional service delivery</p>
+            </div>
+
+            <div className="__box">
+              <img src={customer_satisfaction} alt="image" />
+              <h3>Customer Satisfaction</h3>
+              <p>
+                Prioritize client satisfaction and expectations at every step
+              </p>
+            </div>
+          </div>
+
+          <div className="__middle">
+            <img
+              src="https://www.kanakkupillai.com/site/assets/images/about_img.png"
+              alt=""
+            />
+          </div>
+
+          <div className="__left">
+            <div className="__box">
+              <img src={Google} alt="image" />
+              <h3>Google Reviews</h3>
+              <p>99% of Customers rated us 5* in Google.</p>
+            </div>
+
+            <div className="__box">
+              <img src={turn_around} alt="image" />
+              <h3>Turn Around Time</h3>
+              <p>99% of services will be delivered on within timeline</p>
+            </div>
+
+            <div className="__box">
+              <img src={audit_manager} alt="image" />
+              <h3>Compliance</h3>
+              <p>We manage 99.9% of compliance within due date</p>
+            </div>
           </div>
         </div>
 
@@ -136,7 +242,6 @@ const Home = () => {
         <span>Choose the Right Plan</span>
         <h1>Our Flexible Pricing Plans</h1>
         <div className="cards">
-          {/* Pvt Ltd Company Registration */}
           <div
             onClick={() => handleLink("Pvt_Ltd_Company_Registration")}
             className="card card--purple active"
@@ -150,9 +255,7 @@ const Home = () => {
                   <li>Online submission and processing</li>
                   <li>Affordable pricing with no hidden fees</li>
                   <li>Dedicated customer support</li>
-                  <li>Get Started Now</li>
-                  <li>Comprehensive post-registration services</li>{" "}
-                  {/* New point */}
+                  <li>Comprehensive post-registration services</li>
                 </ul>
               </div>
               <a href="">
@@ -174,19 +277,19 @@ const Home = () => {
           </div>
 
           <div
-            onClick={() => handleLink("Trademark_Registration")}
+            onClick={() => handleLink("Annual_Filing_for_LLP")}
             className="card card--black active"
           >
             <div className="card__outer">
               <div className="card__inner">
                 <p className="title">LLP Registration Online</p>
                 <ul>
-                  <li>Protect your brand with a legal trademark</li>
-                  <li>Exclusive rights to your business name or logo</li>
-                  <li>Nationwide protection against infringement</li>
-                  <li>Fast processing with expert assistance</li>
-                  <li>Get recognized as the rightful owner</li>
-                  <li>Pre-registration trademark search</li>
+                  <li>Simple and quick registration process</li>
+                  <li>Limited liability protection for partners</li>
+                  <li>Online filing and processing</li>
+                  <li>Cost-effective solution for businesses</li>
+                  <li>Legal support and compliance guidance</li>
+                  <li>Minimal documentation required</li>
                 </ul>
               </div>
               <a href="">
@@ -208,19 +311,19 @@ const Home = () => {
           </div>
 
           <div
-            onClick={() => handleLink("ITR-4_Form_Filing")}
+            onClick={() => handleLink("OPC_Registration_Online")}
             className="card card--green active"
           >
             <div className="card__outer">
               <div className="card__inner">
                 <p className="title">OPC Registration Online</p>
                 <ul>
-                  <li>Fast, simple, and affordable registration</li>
                   <li>Single-person ownership model</li>
                   <li>Low cost and minimal documentation</li>
                   <li>Simple tax filing and compliance</li>
-                  <li>Get your business up and running in no time</li>
-                  <li>Get Started Now</li>
+                  <li>Fast and affordable registration</li>
+                  <li>Online submission and support</li>
+                  <li>Complete legal guidance</li>
                 </ul>
               </div>
               <a href="">
@@ -242,21 +345,21 @@ const Home = () => {
           </div>
 
           <div
-            onClick={() => handleLink("Income_Tax_Return_Filing")}
+            onClick={() =>
+              handleLink("Conversion_of_Sole_Proprietorship_to_Pvt_Ltd")
+            }
             className="card card--red active"
           >
             <div className="card__outer">
               <div className="card__inner">
                 <p className="title">Sole Proprietorship Registration</p>
                 <ul>
+                  <li>Fast and secure registration process</li>
                   <li>100% legally recognized online</li>
-                  <li>Fast and secure processing</li>
-                  <li>Used for e-filing and digital documentation</li>
-                  <li>Ideal for businesses and individuals</li>
-                  <li>Issued by certified authorities</li>
-                  <li>Multiple certificate types available</li>{" "}
-                  {/* New point */}
-                  <li>Long validity period options</li> {/* New point */}
+                  <li>Ideal for small businesses and individuals</li>
+                  <li>Simple documentation requirements</li>
+                  <li>Quick processing and issuance</li>
+                  <li>Cost-effective solution for solo entrepreneurs</li>
                 </ul>
               </div>
               <a href="">
@@ -425,186 +528,32 @@ const Home = () => {
 
         <div className="__testomonial-box">
           <Marquee direction="left">
-            {/* First Testimonial */}
-            <div className="cards">
-              <div className="__logo">
-                <img
-                  src="https://s.yimg.com/fz/api/res/1.2/Qpybtr24YAUp2UGFYg1M5A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/fe90b2b3-0ac3-3c81-8238-d3724bf23104/t_500x300"
-                  alt="Company Logo"
-                />
-
-                <div className="__text">
-                  <p>
-                    "We’ve been using this service for over a year, and we
-                    couldn't be more satisfied. Their customer support is
-                    top-notch, and the results are impressive."
-                  </p>
-                </div>
-
-                <div className="__top">
-                  <div className="__left">
-                    <img
-                      src="https://kanakkupillai.com/storage/161/image6.png"
-                      alt="Testimonial Author"
-                    />
-                    <div className="__text">
-                      <h3>Sarah Lee</h3>
-                      <div className="__star">
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="cards">
+                <div className="__logo">
+                  <img src={testimonial.companyLogo} alt="Company Logo" />
+                  <div className="__text">
+                    <p>"{testimonial.text}"</p>
+                  </div>
+                  <div className="__top">
+                    <div className="__left">
+                      <img
+                        src={testimonial.authorImage}
+                        alt={testimonial.name}
+                      />
+                      <div className="__text">
+                        <h3>{testimonial.name}</h3>
+                        <div className="__star">
+                          {[...Array(testimonial.stars)].map((_, i) => (
+                            <i key={i} className="bx bxs-star"></i>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-            {/* Second Testimonial */}
-            <div className="cards">
-              <div className="__logo">
-                <img
-                  src="https://s.yimg.com/fz/api/res/1.2/Qpybtr24YAUp2UGFYg1M5A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/fe90b2b3-0ac3-3c81-8238-d3724bf23104/t_500x300"
-                  alt="Company Logo"
-                />
-
-                <div className="__text">
-                  <p>
-                    "This tool has revolutionized our workflow! It’s intuitive
-                    and has saved us countless hours of manual work."
-                  </p>
-                </div>
-
-                <div className="__top">
-                  <div className="__left">
-                    <img
-                      src="https://kanakkupillai.com/storage/161/image6.png"
-                      alt="Testimonial Author"
-                    />
-                    <div className="__text">
-                      <h3>John Smith</h3>
-                      <div className="__star">
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Third Testimonial */}
-            <div className="cards">
-              <div className="__logo">
-                <img
-                  src="https://s.yimg.com/fz/api/res/1.2/Qpybtr24YAUp2UGFYg1M5A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/fe90b2b3-0ac3-3c81-8238-d3724bf23104/t_500x300"
-                  alt="Company Logo"
-                />
-
-                <div className="__text">
-                  <p>
-                    "I was impressed by the speed and ease with which they were
-                    able to help us with our project. The team is very
-                    professional."
-                  </p>
-                </div>
-
-                <div className="__top">
-                  <div className="__left">
-                    <img
-                      src="https://kanakkupillai.com/storage/161/image6.png"
-                      alt="Testimonial Author"
-                    />
-                    <div className="__text">
-                      <h3>Jessica Brown</h3>
-                      <div className="__star">
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Fourth Testimonial */}
-            <div className="cards">
-              <div className="__logo">
-                <img
-                  src="https://s.yimg.com/fz/api/res/1.2/Qpybtr24YAUp2UGFYg1M5A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/fe90b2b3-0ac3-3c81-8238-d3724bf23104/t_500x300"
-                  alt="Company Logo"
-                />
-
-                <div className="__text">
-                  <p>
-                    "An excellent experience overall. Their team took care of
-                    everything, and the results were outstanding. Highly
-                    recommended!"
-                  </p>
-                </div>
-
-                <div className="__top">
-                  <div className="__left">
-                    <img
-                      src="https://kanakkupillai.com/storage/161/image6.png"
-                      alt="Testimonial Author"
-                    />
-                    <div className="__text">
-                      <h3>Michael Johnson</h3>
-                      <div className="__star">
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Fifth Testimonial */}
-            <div className="cards">
-              <div className="__logo">
-                <img
-                  src="https://s.yimg.com/fz/api/res/1.2/Qpybtr24YAUp2UGFYg1M5A--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTI0MDtxPTgwO3c9MjQw/https://s.yimg.com/zb/imgv1/fe90b2b3-0ac3-3c81-8238-d3724bf23104/t_500x300"
-                  alt="Company Logo"
-                />
-
-                <div className="__text">
-                  <p>
-                    "Amazing customer service and a very user-friendly platform.
-                    We’ve been using this for several months now, and it's been
-                    a game-changer."
-                  </p>
-                </div>
-
-                <div className="__top">
-                  <div className="__left">
-                    <img
-                      src="https://kanakkupillai.com/storage/161/image6.png"
-                      alt="Testimonial Author"
-                    />
-                    <div className="__text">
-                      <h3>Emily White</h3>
-                      <div className="__star">
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                        <i className="bx bxs-star"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </Marquee>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.scss";
 
 import envImage from "../../assets/Images/Logo/CA India Logo.png";
-import logo from '../../assets/Images/Logo/WhatsApp Image 2024-11-11 at 18.34.47.jpeg'
+import logo from "../../assets/Images/Logo/WhatsApp Image 2024-11-11 at 18.34.47.jpeg";
 
 import { Link } from "react-router-dom";
 
@@ -14,12 +14,13 @@ const Footer = () => {
           <div className="__logo">
             <img src={envImage} alt="Logo" />
           </div>
+          <br />
 
           <div className="__description">
             <p>
-              we specialize in helping students transition from high school or
-              ege to pursue their educational aspirations abroad. With a
-              dedicated team of.
+              SVC & ASSOCIATES is a trusted and dynamic accounting firm based in
+              Kolkata and Bangalore, specializing in providing comprehensive
+              financial solutions across various.
             </p>
           </div>
         </div>
@@ -57,31 +58,31 @@ const Footer = () => {
             <h3>Useful Links</h3>
             <ul>
               <li>
-                <Link to="https://incometaxindia.gov.in/Pages/default.aspx">
+                <Link href="https://incometaxindia.gov.in/Pages/default.aspx">
                   <span>Income Tax Dept.</span>
                 </Link>
               </li>
 
               <li>
-                <Link to="https://www.gst.gov.in/">
+                <Link href="https://www.gst.gov.in/">
                   <span>Goods & Services Tax (GST) </span>
                 </Link>
               </li>
 
               <li>
-                <Link to="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp">
+                <Link href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp">
                   <span>E-Tax Information Network</span>
                 </Link>
               </li>
 
               <li>
-                <Link to="https://www.mca.gov.in/content/mca/global/en/home.html">
+                <Link href="https://www.mca.gov.in/content/mca/global/en/home.html">
                   <span>Ministry of Corporate Affairs</span>
                 </Link>
               </li>
 
               <li>
-                <Link to="/https://www.epfindia.gov.in/site_en/index.php">
+                <Link href="/https://www.epfindia.gov.in/site_en/index.php">
                   <span>Employees Provident Fund</span>
                 </Link>
               </li>
@@ -122,13 +123,10 @@ const Footer = () => {
       <div className="__copyright">
         <div className="__left">
           <div className="__logo">
-            <img
-              src={logo}
-              alt="Logo"
-            />
+            <img src={logo} alt="Logo" />
           </div>
 
-          <p>@copyright 2024 Lancashire, All rights reserved.</p>
+          <p>©2024 SVC & ASSOCIATES, All rights reserved.</p>
         </div>
 
         <div className="__right">

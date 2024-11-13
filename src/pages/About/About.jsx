@@ -1,9 +1,97 @@
 import React from "react";
 import "./About.scss";
-
 import veenit from "../../assets/Images/Team/vineet.jpeg";
 import veenita from "../../assets/Images/Team/veenita.jpeg";
 import banner from "../../assets/Images/bg/About.jpg";
+
+const TeamMember = ({ imgSrc, name, title, description, email }) => (
+  <div className="team-member">
+    <img src={imgSrc} alt={`${name} - ${title}`} />
+    <div className="member-details">
+      <h3>{name}</h3>
+      <h4>{title}</h4>
+      <p>{description}</p>
+      <p>
+        Email: <a href={`mailto:${email}`}>{email}</a>
+      </p>
+    </div>
+  </div>
+);
+
+const MissionValuesExpertise = () => (
+  <ul>
+    <li>
+      <i className="bx bx-check"></i> Delivering expert insights in taxation,
+      GST, and financial compliance.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Supporting businesses with tailored,
+      strategic financial advice.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Ensuring clients maximize value through
+      compliance and risk management.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Staying ahead of regulatory changes to
+      keep clients informed.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Focusing on sustainable financial growth
+      for all clients.
+    </li>
+  </ul>
+);
+
+const MissionValuesMission = () => (
+  <ul>
+    <li>
+      <i className="bx bx-check"></i> Simplifying business registration
+      processes for new startups.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Offering reliable legal and compliance
+      solutions for client peace of mind.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Providing a seamless experience for
+      digital signatures, trademark registration, and more.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Delivering fast processing times with
+      personalized customer support.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Building lasting relationships based on
+      transparency and trust.
+    </li>
+  </ul>
+);
+
+const MissionValuesJourney = () => (
+  <ul>
+    <li>
+      <i className="bx bx-check"></i> Building a legacy of trust, ethics, and
+      dedication in financial services.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Growing with a client-first philosophy to
+      adapt to their evolving needs.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Expanding services to empower businesses
+      at every stage of growth.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Staying committed to innovation in
+      accounting and advisory solutions.
+    </li>
+    <li>
+      <i className="bx bx-check"></i> Providing comprehensive solutions that
+      align with clients’ strategic goals.
+    </li>
+  </ul>
+);
 
 const About = () => {
   return (
@@ -13,167 +101,232 @@ const About = () => {
           <div className="__box">
             <div className="__left">
               <div className="__banner">
-                <img src={banner} alt="About SVC & Associates Banner" loading="lazy" />
+                <img
+                  src={banner}
+                  alt="About SVC & Associates Banner"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div className="__right">
+              <div className="__top">
+                <h1>Welcome to SVC & ASSOCIATES</h1>
+                <p>
+                  SVC & ASSOCIATES is a trusted and dynamic accounting firm
+                  based in Kolkata and Bangalore, specializing in providing
+                  comprehensive financial solutions across various domains,
+                  including taxation, auditing, business consulting, and startup
+                  advisory services. Led by a team of experienced Chartered
+                  Accountants, we are committed to delivering personalized
+                  services with a focus on compliance, efficiency, and business
+                  growth.
+                </p>
+
+                <p>
+                  With a rich history and a proven track record, we aim to
+                  simplify complex financial matters for individuals and
+                  businesses, ensuring that they remain compliant with the
+                  ever-evolving regulatory landscape. Our expertise extends
+                  across all facets of accounting and business advisory, making
+                  us your go-to partners for financial success.
+                </p>
+
+                <button aria-label="Book a Consultation">
+                  Book a Consultation <i className="bx bx-phone"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section className="__about">
+        <div className="__left">
+          <h1>Our Mission</h1>
+          <p>
+            Our mission is to empower individuals, startups, and businesses with
+            expert financial solutions and tailored services that ensure
+            compliance, minimize risks, and promote sustainable growth. At SVC &
+            ASSOCIATES, we believe in providing the highest quality of
+            professional services with integrity and commitment to our clients'
+            success.
+          </p>
+
+          <p>
+            We aim to guide businesses through the complexities of tax
+            compliance, GST regulations, audits, and other financial matters,
+            offering strategic advice and helping them make informed decisions
+            for their financial well-being.
+          </p>
+          <h2>Our Mission and Values</h2>
+          <MissionValuesMission />
+          <button type="button" aria-label="Learn More About Our Mission">
+            Know More
+          </button>
+        </div>
+        <div className="__right">
+          <img
+            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
+            alt="About Our Company Image"
+          />
+        </div>
+      </section>
+
+      <section className="__about">
+        <div className="__right">
+          <img
+            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
+            alt="About Our Company Image"
+          />
+        </div>
+
+        <div className="__left">
+          <h1>Our Journey</h1>
+          <p>
+            SVC & ASSOCIATES was founded by two dynamic professionals, CA Vineet
+            Chirania and CA Sonam Chirania, who brought together their
+            collective expertise in taxation, GST, audit, business consulting,
+            and startup advisory. Over the years, our firm has expanded its
+            reach to serve clients across diverse industries, providing them
+            with end-to-end financial solutions.
+          </p>
+          <p>
+            Starting with a vision to create a reliable and customer-focused
+            accounting firm, SVC & ASSOCIATES now stands as a recognized name in
+            Kolkata and Bangalore, offering personalized solutions and adding
+            value to businesses of all sizes.
+          </p>
+          <h2>Our Mission and Values</h2>
+          <MissionValuesJourney />
+          <button type="button" aria-label="Learn More About Our Journey">
+            Know More
+          </button>
+        </div>
+      </section>
+
+      <section className="__about">
+        <div className="__left">
+          <h1>Our Expertise</h1>
+          <p>
+            At SVC & ASSOCIATES, we are committed to delivering tailored
+            financial solutions that address the unique needs of each client.
+            Our team brings a deep understanding of financial, regulatory, and
+            strategic complexities across various industries, enabling us to
+            offer targeted expertise in areas such as taxation, auditing, and
+            corporate restructuring. By combining technical insight with
+            practical guidance, we help clients navigate challenging financial
+            landscapes while ensuring compliance and maximizing value. Our
+            approach is client-centric and outcome-driven, dedicated to
+            supporting businesses at every stage of their growth journey.
+          </p>
+
+          <h2>Our Mission and Values</h2>
+          <MissionValuesExpertise />
+          <button type="button" aria-label="Learn More About Our Expertise">
+            Know More
+          </button>
+        </div>
+        <div className="__right">
+          <img
+            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
+            alt="About Our Company Image"
+          />
+        </div>
+      </section>
+
+      <div className="__core-value">
+        <div className="heading">
+          <h1>Meet Our Leaders</h1>
+          <p>
+            Our leadership team brings together decades of experience in
+            finance, taxation, and consulting. With over 100 years of combined
+            knowledge, our leaders align with our clients' strategic goals.
+          </p>
+        </div>
+
+        <div className="__core-value-item">
+          <div className="__value-list">
+            <div className="__left bg-blue">
+              <div className="__icon">
+                <img src={veenit} alt="featureOne" />
+              </div>
+
+              <div className="__title">
+                <h3>CA Vineet Chirania</h3>
+                <h4>Managing Partner</h4>
+                <div className="__link">
+                  <i className="bx bxl-linkedin-square"></i>
+                  <span>Linkedin</span>
+                </div>
+                <p>
+                  Specializing in taxation and consulting with 15+ years of
+                  experience, Vineet assists businesses in navigating complex
+                  regulatory landscapes.
+                </p>
               </div>
             </div>
 
             <div className="__right">
-              <div className="__top">
-                <h1>Welcome to SVC & ASSOCIATES</h1>
-                <div className="__points">
-                  <div className="__list">
-                    <p>
-                      SVC & ASSOCIATES is a leading accounting and advisory firm located
-                      in Kolkata and Bangalore, delivering specialized financial services
-                      in areas such as taxation, auditing, financial consulting, and startup
-                      advisory. With a seasoned team of Chartered Accountants and financial
-                      experts, we are dedicated to providing customized, growth-oriented financial
-                      solutions that adhere to the highest standards of compliance and ethics.
-                    </p>
-                  </div>
-
-                  <div className="__list">
-                    <p>
-                      Over the years, we have built a robust legacy of trust and excellence
-                      in the industry. Our mission is to simplify financial complexities for
-                      individuals and businesses, ensuring they navigate the regulatory landscape
-                      with confidence and strategic insight.
-                    </p>
-                  </div>
-
-                  <button>Book a Consultation <i className="bx bx-phone"></i></button>
-                </div>
-              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="326"
+                height="143"
+                viewBox="0 0 326 143"
+                fill="none"
+                className="-ml-32 xl:ml-0 mt-20 order-2 hidden lg:block "
+              >
+                <path
+                  d="M0.333008 1.74536L300.33 3.17052C313.584 3.23349 324.278 14.0296 324.215 27.2843L323.667 142.767"
+                  stroke="#D1D1D1"
+                  stroke-width="2"
+                  opacity="1"
+                  pathLength="1"
+                  stroke-dashoffset="0px"
+                  stroke-dasharray="1px 1px"
+                ></path>
+              </svg>
             </div>
           </div>
-        </div>
-      </div>
-      
-      {/* -------------------------------------------- Section 1 -------------------------------------------------------- */}
-      <div className="section1_container">
-        <div className="container">
-          <div className="section1">
-            <div className="left_section1">
-              <h2>Our Expertise</h2>
-              <p>
-                At SVC & ASSOCIATES, we provide tailored financial solutions with a deep
-                understanding of taxation, regulatory compliance, and financial strategy.
-                We work with clients across various industries, offering specialized guidance
-                in areas like GST, corporate restructuring, and risk management. Our team
-                is well-equipped to handle complex financial landscapes, ensuring compliance
-                while maximizing value.
-              </p>
-              <p>
-                We pride ourselves on a client-focused approach, combining technical expertise
-                with practical insights to help businesses and individuals thrive. From startups
-                to large enterprises, our mission is to be a trusted advisor and a strategic partner
-                in each client’s financial journey.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* -------------------------------------------- Section 2 -------------------------------------------------------- */}
-      <div className="section2_container">
-        <div className="container">
-          <div className="section2">
-            <div className="right_section2">
-              <h2>Our Mission</h2>
-              <p>
-                Our mission is to empower our clients—individuals, startups, and established
-                enterprises—through expert financial solutions that support compliance, reduce risk,
-                and promote sustainable growth. At SVC & ASSOCIATES, we believe in delivering the
-                highest standards of professionalism, integrity, and dedication to foster our clients'
-                long-term success.
-              </p>
-              <p>
-                By offering strategic advice in areas such as tax compliance, GST regulations,
-                audits, and financial planning, we enable clients to make informed, sound financial
-                decisions. Our goal is to simplify the complexities of finance, helping clients focus
-                on their core objectives while ensuring regulatory peace of mind.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* -------------------------------------------- Section 3 -------------------------------------------------------- */}
-      <div className="section3_container">
-        <div className="container">
-          <div className="section3">
-            <div className="left_section3">
-              <h2>Our Journey</h2>
-              <p>
-                Founded by CA Vineet Chirania and CA Sonam Chirania, SVC & ASSOCIATES
-                began as a vision to bring high-quality, client-centered accounting and financial
-                consulting to Kolkata and Bangalore. With combined expertise in tax, GST, audit,
-                business advisory, and startup consulting, our founders have cultivated a firm
-                grounded in ethics, integrity, and a commitment to client success.
-              </p>
-              <p>
-                Over the years, we have grown our team, expanded our service offerings, and
-                broadened our client base to serve businesses of all sizes across multiple industries.
-                Our clients range from emerging startups to well-established enterprises, and
-                we are proud to provide solutions that drive their financial success. Today,
-                SVC & ASSOCIATES stands as a trusted name, renowned for our dedication and
-                personalized approach.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* -------------------------------------------- Section 4 -------------------------------------------------------- */}
-      <div className="section4_container">
-        <div className="container">
-          <div className="section4">
-            <div className="__heading">
-              <h2>Meet Our Leaders</h2>
-              <p>
-                Our leadership team brings together decades of experience across domains
-                like auditing, taxation, finance, and business consulting. With over 100 years
-                of combined industry knowledge, our leaders are dedicated to providing
-                insightful, high-quality service that aligns with our clients' strategic goals.
-              </p>
+          <div className="__value-list2">
+            <div style={{ opacity: 0 }} className="__right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="325"
+                height="143"
+                viewBox="0 0 325 143"
+                fill="none"
+                className="-mr-32 xl:ml-0 mt-20 order-1 hidden lg:block "
+              >
+                <path
+                  d="M324.996 1L24.9995 2.42516C11.7448 2.48813 1.0508 13.2842 1.11377 26.5389L1.66238 142.022"
+                  stroke="#D1D1D1"
+                  stroke-width="2"
+                  opacity="1"
+                  pathLength="1"
+                  stroke-dashoffset="0px"
+                  stroke-dasharray="1px 1px"
+                ></path>
+              </svg>
             </div>
 
-            <div className="section4_boxes">
-              {/* CA Vineet Chirania */}
-              <div className="team-member">
-                <img src={veenit} alt="CA Vineet Chirania - Managing Partner" />
-                <div className="member-details">
-                  <h3>CA Vineet Chirania</h3>
-                  <h4>Managing Partner</h4>
-                  <p>
-                    With over 15 years in the field, CA Vineet Chirania specializes in taxation,
-                    financial consulting, and audit. His expertise lies in helping businesses
-                    navigate complex tax and regulatory environments with tailored, strategic insights.
-                  </p>
-                  <p>
-                    Email:{" "}
-                    <a href="mailto:vineet@svcassociates.in">vineet@svcassociates.in</a>
-                  </p>
-                </div>
+            <div className="__left bg-yellow">
+              <div className="__icon">
+                <img src={veenita} alt="featureOne" />
               </div>
 
-              {/* CA Sonam Chirania */}
-              <div className="team-member">
-                <img src={veenita} alt="CA Sonam Chirania - Managing Partner" />
-                <div className="member-details">
-                  <h3>CA Sonam Chirania</h3>
-                  <h4>Managing Partner</h4>
-                  <p>
-                    CA Sonam Chirania brings expertise in GST, startup advisory, and
-                    business process optimization. She is known for her client-first approach
-                    and has a track record of empowering clients to achieve regulatory compliance
-                    and operational efficiency.
-                  </p>
-                  <p>
-                    Email:{" "}
-                    <a href="mailto:sonam@svcassociates.in">sonam@svcassociates.in</a>
-                  </p>
+              <div className="__title">
+                <h3>CA Sonam Chirania</h3>
+                <h4>Managing Partner</h4>
+                <div className="__link">
+                  <i className="bx bxl-linkedin-square"></i>
+                  <span>Linkedin</span>
                 </div>
+                <p>
+                  Expert in GST, startup advisory, and process optimization,
+                  Sonam empowers clients with regulatory compliance and
+                  efficiency.
+                </p>
               </div>
             </div>
           </div>

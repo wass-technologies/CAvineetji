@@ -46,20 +46,16 @@ const Header = () => {
       <div className="__bottom-header">
         <div className="__left">
           <div className="__logo">
-            
-
             <div className="__rgt">
               <NavLink to="/">
                 <img src={CA_Logo} alt="Logo" />
               </NavLink>
 
               <div className="text-animation">
-              <span>SVC & Associates</span>
-              <span>Chartered Accountant</span>
+                <span>SVC & Associates</span>
+                <span>Chartered Accountant</span>
+              </div>
             </div>
-            </div>
-
-
           </div>
 
           <div className="__list">
@@ -301,9 +297,14 @@ const Header = () => {
           </div>
 
           <div className="__button">
-           <a target="_blank" href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"> <button type="button">
-              Quick Inquiry <span>&#x2192;</span>
-            </button>
+            <a
+              target="_blank"
+              href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+            >
+              {" "}
+              <button type="button">
+                Quick Inquiry <span>&#x2192;</span>
+              </button>
             </a>
           </div>
         </div>
@@ -312,10 +313,7 @@ const Header = () => {
       <div className="__mobile-header">
         <div className="__logo">
           <NavLink to="/">
-            <img
-              src="https://www.kanakkupillai.com/storage/uploads/settings/app_logo_QtRG2zLXNvz6gebF8Wf0KtdipdUrzr7gC5KlXkSzHyhzto281Ku5ZzyEochcSReO.png"
-              alt="Logo"
-            />
+            <img src={CA_Logo} alt="Logo" />
           </NavLink>
         </div>
 
@@ -328,7 +326,7 @@ const Header = () => {
         </div>
 
         <div className={`__mobile-menu ${menu === true && "_active-menu"}`}>
-          <ul>
+          <ul onClick={()=> setMenu(false)}>
             <li>
               <p>GST</p>
               <div className="__submenu">

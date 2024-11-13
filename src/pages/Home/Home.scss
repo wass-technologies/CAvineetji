@@ -69,7 +69,7 @@
         border-radius: 9999px;
         border-width: 1px;
         --tw-border-opacity: 1;
-        border-color: #6824d6;
+        border-color: #065a97;
         padding: 0.75rem 2rem;
         text-align: center;
         font-size: 1rem;
@@ -82,7 +82,7 @@
       }
 
       .__profile button:nth-child(1):hover {
-        background-color: #6824d6;
+        background-color: #065a97;
         color: white;
       }
 
@@ -98,7 +98,7 @@
         border-radius: 9999px;
         border-width: 1px;
         --tw-border-opacity: 1;
-        border-color: #6824d6;
+        border-color: #065a97;
         border: none;
         padding: 0.75rem 2rem;
         text-align: center;
@@ -108,7 +108,7 @@
         --tw-text-opacity: 1;
         color: white;
         transition-duration: 0.3s;
-        background-color: #6824d6;
+        background-color: #065a97;
         animation: scale-up-down 6s infinite;
         overflow: hidden;
         position: relative;
@@ -177,6 +177,14 @@
         margin-top: 1rem;
         display: flex;
         gap: 1rem;
+
+        .__happy {
+          h2 {
+          }
+
+          p {
+          }
+        }
 
         img {
           height: 60px;
@@ -265,6 +273,47 @@
           text-align: center;
           line-height: 23px;
         }
+      }
+    }
+
+    .__choose-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .__left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+
+        .__box {
+          padding: 1rem;
+          border-radius: 15px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 100px;
+          }
+
+          h3 {
+            font-size: 18px;
+            margin: 0.5rem 0;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 1.5rem;
+            width: 300px;
+          }
+        }
+      }
+
+      .__middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -680,7 +729,7 @@
       button {
         width: fit-content;
         margin-top: 2rem;
-        background-color: #6824d6;
+        background-color: #065a97;
         color: #fff;
         border: none;
         outline: none;
@@ -756,6 +805,11 @@
         justify-content: space-between;
 
         .__logo {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+
           img {
             width: 60px;
           }
@@ -890,7 +944,7 @@
       justify-content: center;
 
       button {
-        background-color: #6824d6;
+        background-color: #065a97;
         color: #fff;
         border: none;
         outline: none;

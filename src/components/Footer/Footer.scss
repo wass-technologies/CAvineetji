@@ -29,7 +29,7 @@
       }
 
       h3 {
-        color: #6824d6;
+        color: #065a97;
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 1.2rem;
@@ -50,7 +50,7 @@
           margin-top: 5px;
           i {
             font-size: 22px;
-            color: #6824d6;
+            color: #065a97;
           }
         }
       }
@@ -96,9 +96,9 @@
       /* CSS */
       .button-50 {
         appearance: button;
-        background-color: #6824d6;
+        background-color: #065a97;
         background-image: none;
-        border: 1px solid #6824d6;
+        border: 1px solid #065a97;
         border-radius: 4px;
         box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
         box-sizing: border-box;
@@ -167,5 +167,9 @@
          }
        }
     }
+  }
+
+  #footer .__copyright .__right .button-50 {
+    display: none;
   }
 }
