@@ -2,9 +2,9 @@ import React from "react";
 import "./Footer.scss";
 
 import envImage from "../../assets/Images/Logo/CA India Logo.png";
-import logo from "../../assets/Images/Logo/WhatsApp Image 2024-11-11 at 18.34.47.jpeg";
+import logo from "../../assets/Images/Logo/Logo.jpeg";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -31,16 +31,24 @@ const Footer = () => {
               <h3>Menu</h3>
               <ul>
                 <li>
-                  <span>Home</span>
+                  <NavLink to="/">
+                    <span>Home</span>
+                  </NavLink>
                 </li>
                 <li>
-                  <span>About</span>
+                  <NavLink to="/about">
+                    <span>About</span>
+                  </NavLink>
                 </li>
                 <li>
-                  <span>Services</span>
+                  <NavLink to="/blogs">
+                    <span>Blog</span>
+                  </NavLink>
                 </li>
                 <li>
-                  <span>Contact</span>
+                  <NavLink to="/contact">
+                    <span>Contact</span>
+                  </NavLink>
                 </li>
 
                 <li>
