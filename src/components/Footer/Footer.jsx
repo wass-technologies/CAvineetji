@@ -113,7 +113,7 @@ const Footer = () => {
               </li>
               <li>033-35911573 / +91 9830699363 </li>
               <li>
-                <a href="">
+                <a target="_blank" href="https://www.facebook.com/svcassociates">
                   <i className="bx bxl-facebook"></i>
                 </a>
                 <a href="">
@@ -121,6 +121,10 @@ const Footer = () => {
                 </a>
                 <a href="">
                   <i className="bx bxl-instagram"></i>
+                </a>
+
+                <a href="">
+                  <i className="bx bxl-linkedin"></i>
                 </a>
               </li>
             </ul>

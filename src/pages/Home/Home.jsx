@@ -113,7 +113,7 @@ const Home = () => {
 
             <div className="__happy">
               <h2>{customerCount.toLocaleString()}</h2>
-              <p>Happy Customers</p>
+              <p>Our Valued Clients</p>
             </div>
             <img src={googleIcon} alt="googleIcon" />
           </div>
