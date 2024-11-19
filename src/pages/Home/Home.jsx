@@ -89,7 +89,7 @@ const Home = () => {
     <div id="__home_page">
       <div className="__banner">
         <div className="__left">
-          <h1>Simple and Fast Business Incorporation Services in India.</h1>
+          <h1>Simple and Fast <span>Business Incorporation Services</span> in India.</h1>
           <p>
             Start your entrepreneurial journey with us! From crafting a solid
             business plan to registering your company, we offer the guidance and

@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
 
           <div className="__input">
-            <span>Your Massage</span>
+            <span>Your Message</span>
             <textarea
               placeholder="Message"
               name=""
