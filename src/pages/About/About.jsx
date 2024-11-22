@@ -254,10 +254,14 @@ const About = () => {
               <div className="__title">
                 <h3>CA Vineet Chirania</h3>
                 <h4>Managing Partner</h4>
-                <div className="__link">
+                <a
+                  href="https://www.linkedin.com/in/vineet-chirania-b8859720/"
+                  target="_blank"
+                  className="__link"
+                >
                   <i className="bx bxl-linkedin-square"></i>
                   <span>Linkedin</span>
-                </div>
+                </a>
                 <p>
                   Specializing in taxation and consulting with 15+ years of
                   experience, Vineet assists businesses in navigating complex
@@ -318,10 +322,14 @@ const About = () => {
               <div className="__title">
                 <h3>CA Sonam Chirania</h3>
                 <h4>Managing Partner</h4>
-                <div className="__link">
+                <a
+                  href="https://www.linkedin.com/in/sonam-chirania-b243791b4/"
+                  target="_blank"
+                  className="__link"
+                >
                   <i className="bx bxl-linkedin-square"></i>
                   <span>Linkedin</span>
-                </div>
+                </a>
                 <p>
                   Expert in GST, startup advisory, and process optimization,
                   Sonam empowers clients with regulatory compliance and

@@ -32,9 +32,9 @@ const ServiceDetails = () => {
                 <div className="__top">
                   <h1>{storedData.banner.title}</h1>
                   <div className="__points">
-                    {storedData.banner.lists.map((x) => {
+                    {storedData.banner.lists.map((x, i) => {
                       return (
-                        <div className="__list">
+                        <div key={i} className="__list">
                           <div className="_icon">
                             <i className="bx bx-check"></i>
                           </div>
@@ -57,8 +57,8 @@ const ServiceDetails = () => {
                 <div key={i} className="__top">
                   <h1>{x.title}</h1>
 
-                  {x.description.map((y) => {
-                    return <p>{y}</p>;
+                  {x.description.map((y, i) => {
+                    return <p key={i}>{y}</p>;
                   })}
                 </div>
               );

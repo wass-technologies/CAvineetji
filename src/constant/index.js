@@ -21,7 +21,8 @@ import Appointment_and_Resignation_of_Director from "../assets/Images/ServceBann
 import AA_12 from "../assets/Images/ServceBanner/12AA-Registration-Documents.jpg";
 import Annual_Filing_for_LLP from "../assets/Images/ServceBanner/llp-annual-filing.png";
 import DIR_3_KYC_Filing_Online from "../assets/Images/ServceBanner/File-DIR-3-KYC-Form.png";
-import Conversion_of_Sole_Proprietorship from "../assets/Images/ServceBanner/SOle-to-Pvt-Ltd.webp";
+
+import Conversion_of_Sole_Proprietorship_to_Pvt_Ltd from "../assets/Images/ServceBanner/SOle-to-Pvt-Ltd.webp";
 
 // Categories
 
@@ -2051,111 +2052,113 @@ export const servicesData = [
 
       {
         id: "Conversion_of_Sole_Proprietorship_to_Pvt_Ltd",
-
         banner: {
-          image: Conversion_of_Sole_Proprietorship,
-          title: "Conversion of Sole Proprietorship to Pvt Ltd",
+          image: "Conversion_of_Sole_Proprietorship_to_Pvt_Ltd",
 
+          title: "Conversion of Sole Proprietorship to Pvt Ltd",
           lists: [
-            "According to the Companies Act 2013, all Section 8 Companies must file the Section 8 Compliance with the MCA or Ministry of Corporate Affairs.",
-            "The main aim of starting a Section 8 Company is to encourage, promote, and nourish activities related to science, art, sports, charitable activities, commerce, and so on.",
-            "Section 8 Companies fall under the Non-Governmental Organization category.",
-            "Section 8 Companies are exempt from using the terms Limited or Private Limited in their names, reflecting their non-profit nature.",
+            "Convert of Proprietorship to Private Limited Company in India, YES! Elevate your business from Proprietorship to Pvt. Ltd Company to develop your business to multiple levels. Initially, when a business is started, most of the owner’s choice is a sole proprietorship business scheme on account of its low compliance requirements. Once the business develops, to limit the liabilities and to reduce the burden of annual compliance on a single owner, the best way out is nothing but Conversion of Sole Proprietorship to Private Limited Company.",
+            "A Private Limited Company structure provides benefits such as limited liability protection, better access to funding, and enhanced credibility with customers, vendors, and financial institutions.",
           ],
         },
-
         overview: [
           {
-            title: "Overview of Section 8 Company Compliance",
+            title:
+              "Sole Proprietorship to Private Limited Company: A Comprehensive Guide",
             description: [
-              "Section 8 company, under the Companies Act 2013, is a non-profit entity committed to promoting various areas like trade, art, science, sports, education, social welfare, and more. These businesses run with the main goal of helping society rather than creating income for their users. Despite being non-profit, Section 8 companies can conduct business activities and collect funds, but they are limited from sharing gains among members. The Companies Act requires specific yearly compliance for Section 8 companies, including having a yearly General Meeting, keeping financial accounts, making income tax reports, and sending an annual return. Adhering to these compliance standards is crucial for keeping the legal standing and trustworthiness of Section 8 companies, ensuring they run within the legal system and avoid fines for non-compliance. By meeting these duties, Section 8 companies support openness, accountability, and dedication to their altruistic objectives, promoting trust among stakeholders and the public while allowing them to continue their charity efforts successfully.",
+              "Transitioning from a Sole Proprietorship to a Private Limited business is a crucial step for enterprise growth. The trade gives many benefits including restricted responsibility, better reliability, and funds, business rise and monetary security. Governed by the Companies Act of 2013 and the Income Tax Act of 1961, this change offers compliance with legal guidelines and tax rules, offering a strong base for continued company operations.",
+              "By forming a different legal company with owners, the business gets monetary safety, reputation, and growth ability. This change takes exact methods, inclusive of getting applicable rights, filing formation paperwork, and following regulatory criteria. The method not only boosts the organisation's image but also gives economic benefits, better control, and the right of access to funds, setting the base for long-term success and growth in the enterprise's environment.",
             ],
           },
-
-          {
-            title: "Compliance for Section 8 Companies",
-            description: [
-              "Annual compliance for Section 8 companies includes several necessary standards that must be met to keep legal standing and avoid fines. These include :",
-              "1. Appointment of Auditor: As per with Section 139 of the Companies Act, 2013, a Section 8 business ought to choose an auditor within 30 days from the date of creation.",
-              "2. Maintenance of Company Register: Section 8 organizations are expected to hold a regulatory register that consists of details related to money due, data of members, and other vital details.",
-              "3. Convene Statutory Meeting: Section 8 organizations have to keep a statutory meeting within 365 days from the date of creation and thereafter at times of not greater than 15 months.",
-              "4. Preparation of Financial Statements: Section 8 companies need to prepare monetary statements in accordance with the Companies Act 2013.",
-              "5. Income Tax reports: Section 8 companies ought to file income tax reports in Form ITR-6 on 30 September of each monetary year.",
-              "6. Financial Statement Returns Filing and Annual Return Filing: Section 8 organizations have to record Form AOC-4 and Form MGT-7 in 30 days and 60 days of the AGM, respectively.",
-              "Non-compliance with Section 8 business rules can lead to fines, civil action, and loss of legal standing. The effects of non-compliance include :",
-              "1. Penalties: The Central Government may apply fines on Section 8 companies for non-compliance, which can run from Rs. 10 lakhs to Rs. 1 crore.",
-              "2. Legal Action: Directors and officers of Section 8 companies who are in failure may face jail and monetary fines up to Rs. 25 lakhs.",
-              "3. Loss of Legal Status: If the Central Government decides that a Section 8 company is acting dishonestly or against its stated goals, it may cancel the license.",
-              "4. Liability for Fraudulent Activities: If it is found that the company’s business is carried on illegally, then every person in default will be responsible for their actions under section 447 of the Companies Act, 2013.",
-              "Therefore, it is important for Section 8 businesses to follow with all laws to avoid having fines and keep their legal standing. By doing so, they can continue to serve their respective goals and support various social issues.",
-            ],
-          },
-
-          {
-            title: "Benefits Section 8 company compliance :",
-            description: [
-              "1. Ensuring compliance with Section 8 enterprise rules: Adhering to annual compliance necessities set by the Companies Act 2013 shows the corporation's dedication to assembly legal responsibilities and averting legal issues and fines.",
-              "2. Maintaining legal status and escaping consequences: Compliance guarantees the firm's continued presence and activities without having legal repercussions because it avoids fines imposed for failing to meet regulatory necessities.",
-              "3. Protecting the agency's popularity and credibility: Compliance protects the firm's recognition and credibility by showing its dedication to openness, accountability, and moral practices, thereby increasing confidence among stakeholders and the public.",
-              "4. Enhancing stakeholder believe and confidence: Compliance instills trust in stakeholders, together with funders, contributors, and the community, via showing the business enterprise's commitment toward running legally and accurately. This promotes higher connections and aid for the organization's objectives.",
-              "5. Facilitating smooth business operations: Compliance simplifies business operations by giving clear rules and methods to follow, lowering the risk of delays and ensuring efficient management of the company's activities. It supports corporate efficiency and success.",
-            ],
-          },
-
-          {
-            title: "Checklist Section 8 company compliance :",
-            description: [
-              "For Section 8 company compliance, the following checklist is essential :",
-              "1. Conduct Board Meetings and AGM: Hold regular board meetings and an Annual General Meeting (AGM) to talk about business problems, financials, and legal matters.",
-              "2. Prepare Financial Statements and Auditor's Report: Ensure accurate financial statements are written and checked yearly to show the company's financial position.",
-              "3. File Income Tax Returns and Annual Returns: Submit income tax returns and an annual return to the officials within the stated times to meet with tax laws.",
-              "4. Obtain Compliance Certificate: Obtain a compliance certificate from a professional accountant or business secretary to show respect to law requirements.",
-              "5. Maintain Statutory Registers and Records: Keep updated statutory registers and records as needed by law to ensure openness and compliance with governmental duties.",
-              "By following this plan carefully, Section 8 businesses can support legal compliance, financial openness, and working efficiency, thereby keeping their standing as non-profit companies committed to social welfare and charity activities.",
-            ],
-          },
-
-          {
-            title: "Requirements of Section 8 Companies Compliance",
-            description: [
-              "The annual compliance standards for Section 8 companies include :",
-              "1. Annual General Meeting (AGM): Convening an AGM to announce the agency's achievement, approve financial information, and address other critical issues.",
-              "2. Board Meetings: Hold regular board meetings to make strategic decisions and overseas activities and ensure the corporation's compliance with legal guidelines.",
-              "3. Financial Statements: Preparing and preserving correct financial statements that display the firm's economic status and success.",
-              "4. Auditor's Report: Obtaining an auditor's file that proves the details and thoroughness of the corporation's monetary records.",
-              "5. Income Tax Returns: Filing profits tax returns to file the firm's overall profits and pay any applicable taxes.",
-              "6. Annual Return: Submitting a yearly return that gives a brief view of the corporation's actions and economic achievement all throughout the year.",
-              "7. Compliance Certificate: Obtaining a compliance certificate from an expert accountant or organization secretary to prove the firm's compliance with required laws.",
-            ],
-          },
-
           {
             title:
-              "Eligibility Criteria for Section 8 Company Compliance Filing",
+              "Eligibility Criteria for Conversion of Sole Proprietorship to Private Limited Company",
             description: [
-              "The registration factors for a Section 8 business are :",
-              "1. Must be registered under the Companies Act 2013.",
-              "2. Must have a minimum of two members and two owners.",
-              "3. Must have a net worth of at least Rs. 5 lakhs or an annual turnover of at least Rs. 10 lakhs.",
-              "These factors guarantee that Section 8 businesses are created with the necessary control structure, financial stability, and legal compliance to run effectively as non-profit entities. By meeting these requirements, Section 8 businesses can show their dedication to promoting charitable activities and giving positively to society while keeping openness and responsibility in their operations.",
+              "A Sole Proprietorship has to meet certain conditions in order to become a Private Limited Company. Among them are the following:",
+              "Requirement for Directors and Shareholders",
+              "1. There needs to be at least two directors of the firm, who could also be shareholders.",
+              "2. Directors have to be Indian nationals and natural persons—that is, real, live people, not businesses or other legal bodies.",
+              "3. Provided the Reserve Bank of India (RBI) gives them permission, foreign people may hold directorships in Indian private limited companies.",
+              "Ensuring Regulatory Compliance",
+              "The company has to have ₹100,000 in paid-up capital at least.",
+              "The company has to have an Indian-registered office.",
+              "Every director has to have a Director Identification Number (DIN) obtained by the firm.",
+              "The Memorandum of Association (MoA) and Articles of Association (AoA) are among the papers the business must provide to the Registrar of Companies (ROC).",
+              "The ROC must provide the company with a Certificate of Incorporation.",
+              "The business has to open a business bank account and get a Permanent Account Number (PAN) when filing is finished.",
+              "The firm's MoA and AoA must be signed by the owners.",
+              "The Incorporation Form forming the company must be signed by the directors.",
+              "Depending on its business operations, a private limited company must get many licences and rights after creation.",
+              "Transferring of Debts and Assets",
+              "To ensure a smooth change, all of the proprietorship business's assets and liabilities must be passed on to the new private limited company.",
+              "Memorandum of Association (MOA)",
+              "The purchase of the sole proprietorship concern must be specifically stated in the purpose clause of the private limited company's statement of understanding, giving formal clarity about the change process.",
+              "Directors and Shareholders",
+              "The sole owner has to have at least 50% of the voting power in the business and join the directorial board of the private limited company.",
+              "The smallest share capital",
+              "The owner must ensure that the minimum share capital requirement of ₹100,000 is met throughout the change process, as stated in the formation rules of a private limited company.",
             ],
           },
-
           {
-            title: "Documents for Section 8 Company Compliance Filing",
+            title:
+              "The Documents needed to change a sole business to a private limited company",
             description: [
-              "To create a Section 8 company, the following papers are required :",
-              "Identity evidence and address proof for the leaders, including PAN, Aadhar Card, and Voter ID.",
-              "Proof of address for the corporation's registered office, which should be submitted within 30 days of formation.",
-              "Memorandum of Association (MoA) and Articles of Association (AoA), which describe the organisation's objective and guidelines, respectively. MoA has to be filed with Form INC-13; however, no special form is needed for AoA.",
-              "Professional's Declaration (INC-14) and Director's Declaration (INC-15), which are required for formation.",
-              "For foreign people, proper proof of address of the office and name records are needed.",
-              "These papers are necessary for creating a Section 8 company, which is a non-profit organisation created to support social, economic, artistic, and charity goals. By meeting these requirements, Section 8 companies can enhance their reputation, ease Partnership, and access resources from government and foreign organizations while following charitable goals.",
+              "Many important paperwork are often needed to ensure a smooth transfer when changing a sole proprietorship to a private limited company. Among these works are:",
+              "Personal Identification Documents:",
+              "1. PAN Card: Personal Account Number (PAN) card of the owner and directors involved in the change process.",
+              "2. Aadhar Card: Aadhar card of the owner and agents for identification proof.",
+              "Address Proof:",
+              "Records such as power bills, rental agreements, or property records to show the home address of the owner and members.",
+            ],
+          },
+          {
+            title: "Financial Documents:",
+            description: [
+              "Bank records: Recent bank records of the owner and the new private limited business show financial health and compliance.",
+            ],
+          },
+          {
+            title: "Business Documents:",
+            description: [
+              "1. Memorandum of Association (MoA) and Articles of Association (AoA): These papers describe the agency's goals, regulations, and legal guidelines.",
+              "2. Establishment Documents: Documents regarding the establishment of the new private limited agency, including the Certificate of Incorporation.",
+              "3. Shareholder Agreements: Agreements describing the rights and duties of proprietors within the new company.",
+              "4. Asset movement Documents: Records of the movement of assets and costs from the proprietorship to the private limited business.",
+            ],
+          },
+          {
+            title: "Legal Compliance Documents:",
+            description: [
+              "1. Director Identification Number (DIN): Unique identification number for directors.",
+              "2. Digital signing Certificate (DSC): Digital signing for online document filing.",
+              "3. Tax Registration Documents: Tax registration documents like GST registration, if necessary.",
+            ],
+          },
+          {
+            title:
+              "How a Sole Proprietorship Becomes a Private Limited Company: Step by Step Process",
+            description: [
+              "There are many steps involved in changing a sole proprietorship to a private limited company, such as:",
+              "Step 1: DSC and DIN application",
+              "Get the directors taking part in the change process a Digital Signature Certificate (DSC) and a Director Identification Number (DIN).",
+              "Step 2: Gather and send in formal paperwork",
+              "Write the new private limited business's objectives, rules, and laws into the Memorandum of Association (MOA) and Articles of Association (AOA).",
+              "Step 3: Acquire the Required Licences",
+              "Obtain the necessary authorizations from the relevant companies, such as the Ministry of Corporate Affairs' (MCA) name approval.",
+              "Step 4: File Incorporation Documents",
+              "File the incorporation paperwork with the Registrar of Companies (ROC) and get the Certificate of Formation.",
+              "Step 5: Update Contracts and Agreements",
+              "Review and change any current contracts, deals, licenses, permits, or other official papers that were previously in the name of the sole company.",
+              "Step 6: Comply with Tax Regulations",
+              "Comply with tax rules related to changing to a private limited company, including updating the firm's Permanent Account Number (PAN) and filing in the Goods and Services Tax (GST).",
+              "Step 7: Update Bank Account",
+              "Update the bank account in the company's name to handle day-to-day actions on behalf of the business.",
+              "Step 8: File TAN and PAN forms",
+              "Enquire about the company's Tax Account Number (TAN) and Permanent Account Number (PAN).",
             ],
           },
         ],
       },
-
       {
         id: "FCRA_Registration",
 

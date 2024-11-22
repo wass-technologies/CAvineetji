@@ -30,28 +30,32 @@ const Contact = () => {
             <div className="links">
               <i className="bx bxl-whatsapp"></i>
 
-              <div className="_name">
+              <a href="tel:+919088639363" className="_name">
                 <h3>Phone:</h3>
-                <h4>+91 9830699363</h4>
-              </div>
+                <h4>+91 9088639363</h4>
+              </a>
             </div>
 
             <div className="links">
               <i className="bx bx-envelope"></i>
 
-              <div className="_name">
+              <a href="mailto:info@svcassociate.in" className="_name">
                 <h3>Email:</h3>
-                <h4>vineet@svcassociates.in</h4>
-              </div>
+                <h4>info@svcassociate.in</h4>
+              </a>
             </div>
 
             <div className="links">
               <i className="bx bxl-linkedin"></i>
 
-              <div className="_name">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/company/svc-associates/"
+                className="_name"
+              >
                 <h3>Linkedin:</h3>
                 <h4>SVC Associates</h4>
-              </div>
+              </a>
             </div>
 
             <div className="links">
@@ -84,6 +88,32 @@ const Contact = () => {
           </div>
 
           <button type="button">Submit &#x2192;</button>
+        </div>
+      </div>
+
+      <div className="__location">
+        <div className="__title">
+          <h3><i className='bx bx-current-location' ></i> Our Locations</h3>
+        </div>
+
+        <div className="__container">
+          <div className="__cards">
+            <h4> Kolkata Office :</h4>
+            <p>
+              Astra Tower, Unit No. ASO-303, Newtown, Action Area II, Kolkata-
+              700161
+            </p>
+          </div>
+
+          <div className="__cards">
+            <h4>Kolkata Office :</h4>
+            <p>Anuj Complex, H-1/16 VIP Road, Baguihati, Kolkata-700059</p>
+          </div>
+
+          <div className="__cards">
+            <h4>Bangalore Office :</h4>
+            <p>IndiQube Aura, IBIS Hotel, Bommanahalli, Bengaluru- 560068</p>
+          </div>
         </div>
       </div>
     </section>

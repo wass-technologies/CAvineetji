@@ -201,9 +201,17 @@
         color: #fff;
         border: none;
         outline: none;
-        padding: 12px 1.5rem;
+        padding: 10px 1.5rem;
         border-radius: 50px;
         font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        img {
+          width: 30px;
+          border-radius: 50px;
+        }
       }
     }
   }
@@ -231,8 +239,48 @@
       }
 
       .__logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+
         img {
-          width: 100px;
+          width: 150px;
+        }
+
+        .text-animation {
+          overflow: hidden;
+          position: absolute;
+          left: 5px;
+          bottom: -14px;
+          width: 300px;
+        }
+
+        .text-animation span {
+          display: inline-block;
+          display: none;
+          overflow: hidden;
+          font-size: 12px !important;
+          font-weight: 600;
+          letter-spacing: 0.5px;
+          margin-top: 0.8rem;
+          transition: 0.5s;
+          color: #000;
+        }
+
+        .text-animation span.text-in {
+          display: block;
+          animation: textIn 0.5s ease;
+        }
+
+        @keyframes textIn {
+          0% {
+            transform: translateY(50%);
+          }
+
+          100% {
+            transform: translateY(0%);
+          }
         }
       }
 

@@ -21,6 +21,7 @@ import service from "../../assets/Images/icons/service.webp";
 import turn_around from "../../assets/Images/icons/turn-around-clock.png";
 import userImage from "../../assets/Images/Home/user.jpg";
 import googleImage from "../../assets/Images/icons/Google.webp";
+import whatsAppIcon from "../../assets/Images/icons/whatsapp-logo.png";
 
 const Home = () => {
   const [customerCount, setCustomerCount] = useState(0);
@@ -83,13 +84,16 @@ const Home = () => {
       text: "Amazing customer service and a very user-friendly platform. We’ve been using this for several months now, and it's been a game-changer.",
       stars: 5,
     },
-  ];  
+  ];
 
   return (
     <div id="__home_page">
       <div className="__banner">
         <div className="__left">
-          <h1>Simple and Fast <span>Business Incorporation Services</span> in India.</h1>
+          <h1>
+            Simple and Fast <span>Business Incorporation Services</span> in
+            India.
+          </h1>
           <p>
             Start your entrepreneurial journey with us! From crafting a solid
             business plan to registering your company, we offer the guidance and
@@ -100,11 +104,20 @@ const Home = () => {
 
           <div className="__contact-button">
             <div className="__profile">
-              <button type="button">Company</button>
-              <button type="button">
-                <span className="btn-outer-bg"></span>
-                Schedule a call <i className="bx bx-phone"></i>
-              </button>
+              <a
+                href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+                target="_blank"
+              >
+                <button className="btn2" type="button">
+                  <i className="bx bxl-whatsapp"></i> Contact
+                </button>
+              </a>
+              <a href="tel:+91 9088639363">
+                <button className="btn1" type="button">
+                  <span className="btn-outer-bg"></span>
+                  +91 9088639363 <i className="bx bx-phone"></i>
+                </button>
+              </a>
             </div>
           </div>
 
@@ -202,38 +215,39 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="__colab-images">
-          <Marquee>
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fvidico.png&w=1920&q=75"
-              alt="icon"
-            />
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fmultidaya.png&w=1920&q=75"
-              alt="icon"
-            />
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fventeny.png&w=1920&q=75"
-              alt="icon"
-            />
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fmultidaya.png&w=1920&q=75"
-              alt="icon"
-            />
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fwappin.png&w=1920&q=75"
-              alt="icon"
-            />
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fcurana.png&w=1920&q=75"
-              alt="icon"
-            />
-            <img
-              src="https://www.nijaworks.com/_next/image?url=%2Fbrand%2Fventeny.png&w=1920&q=75"
-              alt="icon"
-            />
-          </Marquee>
-        </div>
+        {/* <div className="__ratng">
+          <div className="__cards">
+            <img src={resonable} alt="resonable" />
+            <div className="__text">
+              <h4>Reasonable</h4>
+              <p>
+                Low price with professional service delivery, ensuring value for
+                money.
+              </p>
+            </div>
+          </div>
+
+          <div className="__cards">
+            <img src={support} alt="expert support" />
+            <div className="__text">
+              <h4>Expert Support</h4>
+              <p>
+                Guidance from industry experts to ensure smooth processes and
+                compliance.
+              </p>
+            </div>
+          </div>
+
+          <div className="__cards">
+            <img src={fast} alt="fast processing" />
+            <div className="__text">
+              <h4>Fast Processing</h4>
+              <p>
+                Quick turnaround time for document submissions and approvals.
+              </p>
+            </div>
+          </div>
+        </div> */}
       </div>
 
       <Services />
@@ -699,6 +713,24 @@ const Home = () => {
             </SwiperSlide>
           </Swiper>
         </div>
+      </div>
+
+      <div id="help-box">
+        <a
+          href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+          target="_blank"
+          className="box"
+        >
+          <div className="w-icon">
+            <img src={whatsAppIcon} alt="img" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
       </div>
     </div>
   );
