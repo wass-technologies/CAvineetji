@@ -59,7 +59,7 @@ const Header = () => {
           </div>
 
           <div className="__list">
-            {/* <div className="lists">
+            <div className="lists">
               <p>
                 Startup <i className="bx bx-chevron-down"></i>
               </p>
@@ -67,44 +67,39 @@ const Header = () => {
               <div className="__dropdown-menu">
                 <div className="__container">
                   <div className="__menu">
-                    <div className="__flex">
+                    <div className="__non-flex">
                       <div className="__left-menu">
-                        <h3>Taxation</h3>
+                        <p
+                          onClick={() =>
+                            handleLink("Pvt_Ltd_Company_Registration")
+                          }
+                        >
+                          Pvt Ltd Company Registration
+                        </p>
+                        <p
+                          onClick={() => handleLink("LLP_Registration_Online")}
+                        >
+                          LLP Registration Online
+                        </p>
 
                         <p
-                          onClick={() => handleLink("Income_Tax_Return_Filing")}
+                          onClick={() => handleLink("OPC_Registration_Online")}
                         >
-                          Income Tax Return Filing
+                          OPC Registration Online
                         </p>
 
-                        <p onClick={() => handleLink("TDS_Return_Filing")}>
-                          TDS Return Filing
+                        <p onClick={() => handleLink("FSSAI_Registration")}>
+                          FSSAI Registration
                         </p>
-
-                        <p onClick={() => handleLink("PF_Return_Filing")}>
-                          PF Return Filing
-                        </p>
-                      </div>
-                      <div className="__right-menu">
-                        <h3>Tax Filing</h3>
-
-                        <p onClick={() => handleLink("ITR-2_Form_Filing")}>
-                          ITR-2 Form Filing
-                        </p>
-
-                        <p onClick={() => handleLink("ITR-3_Form_Filing")}>
-                          ITR-3 Form Filing
-                        </p>
-
-                        <p onClick={() => handleLink("ITR-4_Form_Filing")}>
-                          ITR-4 Form Filing
+                        <p onClick={() => handleLink("MSME_Registration")}>
+                          MSME Registration
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
 
             <div className="lists">
               <p className="__hov-name">
