@@ -21,7 +21,6 @@ import Appointment_and_Resignation_of_Director from "../assets/Images/ServceBann
 import AA_12 from "../assets/Images/ServceBanner/12AA-Registration-Documents.jpg";
 import Annual_Filing_for_LLP from "../assets/Images/ServceBanner/llp-annual-filing.png";
 import DIR_3_KYC_Filing_Online from "../assets/Images/ServceBanner/File-DIR-3-KYC-Form.png";
-
 import Conversion_of_Sole_Proprietorship_to_Pvt_Ltd from "../assets/Images/ServceBanner/SOle-to-Pvt-Ltd.webp";
 
 // Categories
@@ -2052,10 +2051,11 @@ export const servicesData = [
 
       {
         id: "Conversion_of_Sole_Proprietorship_to_Pvt_Ltd",
-        banner: {
-          image: "Conversion_of_Sole_Proprietorship_to_Pvt_Ltd",
 
+        banner: {
+          image: Conversion_of_Sole_Proprietorship_to_Pvt_Ltd,
           title: "Conversion of Sole Proprietorship to Pvt Ltd",
+
           lists: [
             "Convert of Proprietorship to Private Limited Company in India, YES! Elevate your business from Proprietorship to Pvt. Ltd Company to develop your business to multiple levels. Initially, when a business is started, most of the owner’s choice is a sole proprietorship business scheme on account of its low compliance requirements. Once the business develops, to limit the liabilities and to reduce the burden of annual compliance on a single owner, the best way out is nothing but Conversion of Sole Proprietorship to Private Limited Company.",
             "A Private Limited Company structure provides benefits such as limited liability protection, better access to funding, and enhanced credibility with customers, vendors, and financial institutions.",
