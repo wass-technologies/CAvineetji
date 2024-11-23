@@ -165,7 +165,12 @@ const Footer = () => {
             <img src={logo} alt="Logo" />
           </div>
 
-          <p>©2024 SVC & ASSOCIATES, All rights reserved.</p>
+          <p>
+            ©2024 SVC & ASSOCIATES, All rights reserved.
+            <a target="_blank" href="https://www.webappssoft.com/">
+              <strong>Designed by WASS</strong>
+            </a>
+          </p>
         </div>
 
         <div className="__right">

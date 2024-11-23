@@ -90,6 +90,14 @@
         width: 130px;
         margin-bottom: 5px;
       }
+
+      a {
+        margin-left: 4px;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-decoration: underline;
+      }
     }
 
     .__right {
@@ -148,24 +156,19 @@
   }
 }
 
-
-
 @media screen and (max-width: 786px) {
-
   #footer {
-
-    .__footer-box{
+    .__footer-box {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 1rem;
-      
-       .__list{
 
-         .__v{
+      .__list {
+        .__v {
           gap: 1rem;
-         }
-       }
+        }
+      }
     }
   }
 
