@@ -131,9 +131,14 @@ const About = () => {
                   us your go-to partners for financial success.
                 </p>
 
-                <button aria-label="Book a Consultation">
-                  Book a Consultation <i className="bx bx-phone"></i>
-                </button>
+                <a
+                  target="_blank"
+                  href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+                >
+                  <button aria-label="Book a Consultation">
+                    Book a Consultation <i className="bx bx-phone"></i>
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -160,9 +165,15 @@ const About = () => {
           </p>
           <h2>Our Mission and Values</h2>
           <MissionValuesMission />
-          <button type="button" aria-label="Learn More About Our Mission">
-            Know More
-          </button>
+
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+          >
+            <button type="button" aria-label="Learn More About Our Mission">
+              Know More
+            </button>
+          </a>
         </div>
         <div className="__right">
           <img
@@ -198,9 +209,14 @@ const About = () => {
           </p>
           <h2>Our Mission and Values</h2>
           <MissionValuesJourney />
-          <button type="button" aria-label="Learn More About Our Journey">
-            Know More
-          </button>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+          >
+            <button type="button" aria-label="Learn More About Our Journey">
+              Know More
+            </button>
+          </a>
         </div>
       </section>
 
@@ -222,9 +238,14 @@ const About = () => {
 
           <h2>Our Mission and Values</h2>
           <MissionValuesExpertise />
-          <button type="button" aria-label="Learn More About Our Expertise">
-            Know More
-          </button>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+          >
+            <button type="button" aria-label="Learn More About Our Expertise">
+              Know More
+            </button>
+          </a>
         </div>
         <div className="__right">
           <img

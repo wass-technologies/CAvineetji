@@ -7,7 +7,6 @@ import CA_Logo from "../../assets/Images/Logo/Logo.jpeg";
 import MobileHeader from "./MobileHeader";
 
 const Header = () => {
-  
   const data = servicesData[0].data;
 
   const handleLink = (id) => {
@@ -60,7 +59,7 @@ const Header = () => {
           </div>
 
           <div className="__list">
-            <div className="lists">
+            {/* <div className="lists">
               <p>
                 Startup <i className="bx bx-chevron-down"></i>
               </p>
@@ -105,7 +104,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="lists">
               <p className="__hov-name">

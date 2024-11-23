@@ -440,7 +440,9 @@ const Home = () => {
             </li>
           </ul>
 
-          <button type="button">Know More</button>
+          <Link to="/about">
+            <button type="button">Know More</button>
+          </Link>
         </div>
 
         <div className="__right">

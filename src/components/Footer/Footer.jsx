@@ -169,9 +169,14 @@ const Footer = () => {
         </div>
 
         <div className="__right">
-          <button className="button-50" role="button">
-            Register
-          </button>
+          <a
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=919088639363&text=Hi%2C%20SVC%20%26%20ASSOCIATES"
+          >
+            <button className="button-50" role="button">
+              Register
+            </button>
+          </a>
         </div>
       </div>
     </div>
