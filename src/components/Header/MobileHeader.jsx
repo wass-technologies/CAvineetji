@@ -14,7 +14,9 @@ const MobileHeader = () => {
   const handleLink = (id) => {
     const filteredData = data.filter((x) => x.id === id);
     localStorage.setItem("serviceData", JSON.stringify(filteredData[0]));
-    window.location.href = `/service/${id}`;
+    setTimeout(() => {
+      window.location.href = `/service/${id}`;
+    }, 200);
   };
 
   useEffect(() => {
@@ -212,23 +214,23 @@ const MobileHeader = () => {
             )}
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <NavLink to="/about">
               <p>About</p>
             </NavLink>
           </li>
-          <li>
+          <li onClick={() => setMenu(false)}>
             <NavLink to="/blogs">
               <p>Blog</p>
             </NavLink>
           </li>
-          <li>
+          <li onClick={() => setMenu(false)}>
             <NavLink to="/contact">
               <p>Contact</p>
             </NavLink>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <Link to="/privicy-policy">
               <p>Privacy Policy</p>
             </Link>

@@ -9,6 +9,9 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { servicesData } from "../../constant";
 
+import homeBanner from "../../assets/Images/banners/Group 2 (1) (1) 1.png";
+import ladySmile from "../../assets/Images/banners/Group 1.png";
+import aboutUs from "../../assets/Images/banners/image 3.png";
 import faqIcon from "../../assets/Images/Home/faq.png";
 import Services from "../../components/Services/Services";
 import avtar_icon from "../../assets/Images/Home/avatar.png";
@@ -132,10 +135,7 @@ const Home = () => {
           </div>
         </div>
         <div className="__right">
-          <img
-            src="https://kanakkupillai.com/storage/340/breadcrumb_img_1.png"
-            alt="banner"
-          />
+          <img src={homeBanner} alt="banner" />
         </div>
       </div>
 
@@ -147,22 +147,6 @@ const Home = () => {
             It works like crazy.
           </h1>
         </div>
-
-        {/* <div className="__why-box">
-          <div className="__left">
-            <h1>28X</h1>
-            <p>Higher response rate than email & digital</p>
-          </div>
-
-          <div className="__center">
-            <img src={whyImage} alt="" />
-          </div>
-
-          <div className="__left">
-            <h1>17 Days</h1>
-            <p>Lifespan of a postcard. seconds for email or SMS</p>
-          </div>
-        </div> */}
 
         <div className="__choose-box">
           <div className="__left">
@@ -188,10 +172,7 @@ const Home = () => {
           </div>
 
           <div className="__middle">
-            <img
-              src="https://www.kanakkupillai.com/site/assets/images/about_img.png"
-              alt=""
-            />
+            <img src={ladySmile} alt="ladySmile" />
           </div>
 
           <div className="__left">
@@ -214,40 +195,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-
-        {/* <div className="__ratng">
-          <div className="__cards">
-            <img src={resonable} alt="resonable" />
-            <div className="__text">
-              <h4>Reasonable</h4>
-              <p>
-                Low price with professional service delivery, ensuring value for
-                money.
-              </p>
-            </div>
-          </div>
-
-          <div className="__cards">
-            <img src={support} alt="expert support" />
-            <div className="__text">
-              <h4>Expert Support</h4>
-              <p>
-                Guidance from industry experts to ensure smooth processes and
-                compliance.
-              </p>
-            </div>
-          </div>
-
-          <div className="__cards">
-            <img src={fast} alt="fast processing" />
-            <div className="__text">
-              <h4>Fast Processing</h4>
-              <p>
-                Quick turnaround time for document submissions and approvals.
-              </p>
-            </div>
-          </div>
-        </div> */}
       </div>
 
       <Services />
@@ -397,9 +344,8 @@ const Home = () => {
       </section>
 
       <div className="__about">
-        <span className="page_title">About Our Company</span>
-
         <div className="__left">
+          <div className="_title">About Our Company</div>
           <h1>About Our Company</h1>
           <p>
             Our Company is a modern platform dedicated to empowering individuals
@@ -433,11 +379,6 @@ const Home = () => {
               and personalized customer support to guide you every step of the
               way.
             </li>
-            <li>
-              <i className="bx bx-check"></i> Our platform is backed by a team
-              of experts who prioritize transparency and trust in every
-              interaction.
-            </li>
           </ul>
 
           <Link to="/about">
@@ -446,10 +387,7 @@ const Home = () => {
         </div>
 
         <div className="__right">
-          <img
-            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
-            alt="About Our Company Image"
-          />
+          <img src={aboutUs} alt="About Our Company Image" />
         </div>
       </div>
 

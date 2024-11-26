@@ -1,22 +1,13 @@
 import React from "react";
 import "./About.scss";
+
+import aboutBanner1 from "../../assets/Images/banners/about.jpeg";
+import aboutBanner2 from "../../assets/Images/banners/about2.jpeg";
+import aboutBanner3 from "../../assets/Images/banners/about3.jpeg";
+
 import veenit from "../../assets/Images/Team/vineet.jpeg";
 import veenita from "../../assets/Images/Team/veenita.jpeg";
 import banner from "../../assets/Images/bg/About.jpg";
-
-const TeamMember = ({ imgSrc, name, title, description, email }) => (
-  <div className="team-member">
-    <img src={imgSrc} alt={`${name} - ${title}`} />
-    <div className="member-details">
-      <h3>{name}</h3>
-      <h4>{title}</h4>
-      <p>{description}</p>
-      <p>
-        Email: <a href={`mailto:${email}`}>{email}</a>
-      </p>
-    </div>
-  </div>
-);
 
 const MissionValuesExpertise = () => (
   <ul>
@@ -126,9 +117,7 @@ const About = () => {
                   With a rich history and a proven track record, we aim to
                   simplify complex financial matters for individuals and
                   businesses, ensuring that they remain compliant with the
-                  ever-evolving regulatory landscape. Our expertise extends
-                  across all facets of accounting and business advisory, making
-                  us your go-to partners for financial success.
+                  ever-evolving regulatory landscape.
                 </p>
 
                 <a
@@ -176,19 +165,13 @@ const About = () => {
           </a>
         </div>
         <div className="__right">
-          <img
-            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
-            alt="About Our Company Image"
-          />
+          <img src={aboutBanner1} alt="About Our Company Image" />
         </div>
       </section>
 
       <section className="__about">
         <div className="__right">
-          <img
-            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
-            alt="About Our Company Image"
-          />
+          <img src={aboutBanner2} alt="About Our Company Image" />
         </div>
 
         <div className="__left">
@@ -248,10 +231,7 @@ const About = () => {
           </a>
         </div>
         <div className="__right">
-          <img
-            src="https://framerusercontent.com/images/G70rSEY6AfoZPvecv1IrsJ8g.png?lossless=1"
-            alt="About Our Company Image"
-          />
+          <img src={aboutBanner3} alt="About Our Company Image" />
         </div>
       </section>
 
