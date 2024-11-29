@@ -143,7 +143,10 @@ const Footer = () => {
                 <a href="">
                   <i className="bx bxl-youtube"></i>
                 </a>
-                <a href="">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/svcassociate.in?igsh=YzljYTk1ODg3Zg%3D%3D"
+                >
                   <i className="bx bxl-instagram"></i>
                 </a>
 

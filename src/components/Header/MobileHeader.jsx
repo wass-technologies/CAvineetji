@@ -69,6 +69,31 @@ const MobileHeader = () => {
       <div className={`__mobile-menu ${menu === true && "_active-menu"}`}>
         <ul>
           <li>
+            <p onClick={() => setHeaderMenu("Startup")}>Startup</p>
+            {headerMenu === "Startup" && (
+              <div onClick={() => setMenu(false)} className="__submenu">
+                <p onClick={() => handleLink("Pvt_Ltd_Company_Registration")}>
+                  Pvt Ltd Company Registration
+                </p>
+                <p onClick={() => handleLink("LLP_Registration_Online")}>
+                  LLP Registration Online
+                </p>
+
+                <p onClick={() => handleLink("OPC_Registration_Online")}>
+                  OPC Registration Online
+                </p>
+
+                <p onClick={() => handleLink("FSSAI_Registration")}>
+                  FSSAI Registration
+                </p>
+                <p onClick={() => handleLink("MSME_Registration")}>
+                  MSME Registration
+                </p>
+              </div>
+            )}
+          </li>
+
+          <li>
             <p onClick={() => setHeaderMenu("GST")}>GST</p>
             {headerMenu === "GST" && (
               <div onClick={() => setMenu(false)} className="__submenu">
@@ -236,13 +261,13 @@ const MobileHeader = () => {
             </Link>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <a target="_blank" href="https://www.icai.org/">
               <p>ICAI (India)</p>
             </a>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <a
               target="_blank"
               href="https://incometaxindia.gov.in/Pages/default.aspx"
@@ -251,13 +276,13 @@ const MobileHeader = () => {
             </a>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <a target="_blank" href="https://www.gst.gov.in/">
               <p>Goods & Services Tax (GST) </p>
             </a>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <a
               target="_blank"
               href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp"
@@ -266,7 +291,7 @@ const MobileHeader = () => {
             </a>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <a
               target="_blank"
               href="https://www.mca.gov.in/content/mca/global/en/home.html"
@@ -275,7 +300,7 @@ const MobileHeader = () => {
             </a>
           </li>
 
-          <li>
+          <li onClick={() => setMenu(false)}>
             <a
               target="_blank"
               href="https://www.epfindia.gov.in/site_en/index.php"

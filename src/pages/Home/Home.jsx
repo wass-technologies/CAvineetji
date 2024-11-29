@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { servicesData } from "../../constant";
 
+import Pepols from "../../assets/Images/shape/peaple.png";
 import homeBanner from "../../assets/Images/banners/Group 2 (1) (1) 1.png";
 import ladySmile from "../../assets/Images/banners/Group 1.png";
 import aboutUs from "../../assets/Images/banners/image 3.png";
@@ -53,38 +54,163 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Rajesh Kumar",
+      name: "FM Office Dream Residency",
       companyLogo: googleImage,
-      authorImage: userImage,
-      text: "We’ve been using this service for over a year, and we couldn't be more satisfied. Their customer support is top-notch, and the results are impressive.",
-      stars: 4,
-    },
-    {
-      name: "Sana Gupta",
-      companyLogo: googleImage,
-      authorImage: userImage,
-      text: "This tool has revolutionized our workflow! It’s intuitive and has saved us countless hours of manual work.",
-      stars: 4,
-    },
-    {
-      name: "Anil Sharma",
-      companyLogo: googleImage,
-      authorImage: userImage,
-      text: "I was impressed by the speed and ease with which they were able to help us with our project. The team is very professional.",
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjX_9nrKIhas8n_X0wfNtnTR9vYjXQj2rVP0PtyOKvz_UI2_Betx=s40-c-rp-mo-br100",
+      text: "I had an excellent experience with this CA firm. Their team is professional, knowledgeable, and always goes the extra mile to ensure client satisfaction. They handled my financial matters with utmost care and provided clear, actionable advice. Highly recommend!",
       stars: 5,
     },
     {
-      name: "Priya Mehta",
+      name: "Indranil Mondal",
       companyLogo: googleImage,
-      authorImage: userImage,
-      text: "An excellent experience overall. Their team took care of everything, and the results were outstanding. Highly recommended!",
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjXiecM4jwzwIBc5FZljScKrSzwm20DFhZJOotPgzXlVonBgFXiJ=s40-c-rp-mo-br100",
+      text: "Great experience working with Vineet Ji and Shubhankar. They always maintains deadlines and clears all our doubts.",
+      stars: 5,
+    },
+    {
+      name: "K Kedia",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocKU3JjhWSnso9rXR-g5cLR7rJw_mP510DDruIDKERh2W0EQCw=s40-c-rp-mo-br100",
+      text: "SVC & ASSOCIATES delivers an unparalleled level of service that defines excellence. From the initial engagement to the final result, their commitment to customer satisfaction is unwavering. With meticulous attention to detail, prompt responses, and a genuine passion for exceeding expectations, Vineet Ji has set a new standard for exceptional service. I enthusiastically recommend their services to anyone in search of a truly remarkable experience :)",
+      stars: 5,
+    },
+    {
+      name: "Ashis Choudhury",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjXPSgRDWECjwdYMfFp5eR_nHIaC_yTijifvsjTO5zvTPpOohA2F=s40-c-rp-mo-br100",
+      text: "Accurate and quick service. Very much professional. 2 years back, I approached other firm, they didn't do it and keep saying it will be done, no worries. Finally I reached out to vineet ji,  I had only 2 days left for filing, and he did it effortlessly.",
       stars: 4,
     },
     {
-      name: "Vikram Patel",
+      name: "Moinak Dey",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjVa24JrkDcWEWab4OldmWwhBcFOt_llWrC5ABI7vAqRKfWch0Fh=s40-c-rp-mo-ba2-br100",
+      text: "Excellent services. On stop solution for all queries.",
+      stars: 5,
+    },
+    {
+      name: "Arijit Roy",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocI_1YT6rpAmxmiPWE2U4lSwpt0R2BAFjoA8raK3XJ_CwMlzqjM=s40-c-rp-mo-br100",
+      text: "Satisfied with services provided by SVC & ASSOCIATES.",
+      stars: 5,
+    },
+    {
+      name: "Sudip Chandra",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjW2pSklIUvCIAYDO_Oh1g0x25XlQ7jX7fqDu34J1zwBp-IMO4b7=s40-c-rp-mo-br100",
+      text: "Be tension free about your financial matter with the association of SVC & ASSOCIATES",
+      stars: 5,
+    },
+    {
+      name: "Nitesh Saraf",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjXKLvAJFauJ2T8c9DBL0AqdJL8Ta2rE97x3-3JhhNdSW6_vURK1=s40-c-rp-mo-br100",
+      text: "Excellent services at reasonable cost.",
+      stars: 5,
+    },
+    {
+      name: "MANASHI ACHARYA",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjXYk8EpBzmX7FQ_3yNmPahHXEIn1NcOAJ0lJeclxhdJK4nh7kGJ=s40-c-rp-mo-br100",
+      text: "As previous year, this time also SVC&ASSOCIATES taken prompt action and cooperation for submitting the IT return.",
+      stars: 5,
+    },
+    {
+      name: "Ashok Sharma",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocJ-0h0MN2JGeXgMdkwtQjj9OVCD3CrasRxx7yzkVnnK9uN-ay7l=s40-c-rp-mo-br100",
+      text: "It was an excellent experience since the beginning till filing of my ITR today I shall highly recommend this company specially the owner of the company Sri Vineet Kumar.All the best for him.",
+      stars: 5,
+    },
+    {
+      name: "Kabita kumari Shaw",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjUNQSnQb-ltlm9kPS_1AJQMDdzxSdxzq5cmM_vKFx33Y5JTsfbq=s40-c-rp-mo-br100",
+      text: "It's good for Learning from this firm one can gain alot of knowledge regarding Accounts. Our principle is very best and environment is also good.",
+      stars: 5,
+    },
+    {
+      name: "Ravindra Chowdhary",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocIxkkQsJSLFgrwLPLUUzlvYgPGR0ibe8n22lff6ksM8pCAHyA=s40-c-rp-mo-br100",
+      text: "Overwhelmed after meeting Sir, cleared all doubt. I will recommend you all people to avail service from him you will be as happy as me.",
+      stars: 5,
+    },
+    {
+      name: "Buddha Nandy",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocLGL9bmo0c-duFSXG9S696azuQeokPukYc6emF51tqSQlLTgA=s40-c-rp-mo-br100",
+      text: "I got maximum and instant help from SVC and Associates for filing my I Tax filing. The whole team was very  helpful and transparent to solve the problems.",
+      stars: 5,
+    },
+    {
+      name: "Shyamsundar Ghosh",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocKHeoMFQbyBX4EFAe9hFEqnden0degQDQa0xjNxkYqoetfTvg=s40-c-rp-mo-br100",
+      text: "Quick support and very helpful",
+      stars: 5,
+    },
+    {
+      name: "Subhadeep Adhikary",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWKcb_lyK_dfx1N9crKUafsfOoQsI7h1DjGgE5r8q6dn3nOxQ=s40-c-rp-mo-br100",
+      text: "Very effective and instant problem solution. Consultant fees and ITR filing charges are very less. Very helpful also staff are also helpful.",
+      stars: 5,
+    },
+    {
+      name: "Subhankar Biswas",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjUqVk8C9OWSqA_50Nuyd52QmeNDIm1hkgRtDTKEZ-NxWlLzQKc0=s40-c-rp-mo-br100",
+      text: "Awesome Professional Services Excellent behaviour Reasonable prices Within time deliverable output",
+      stars: 5,
+    },
+    {
+      name: "Sk Siraj",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjVKpMZMvPxMW1vDUKTYIgbuC3IhneUqTn2jE3csc13expHQPI-8=s40-c-rp-mo-br100",
+      text: "I visited  SVC & ASSOCIATES first time but my experience is more than I actually expected.I wish this firm a grand success with the pace of time.",
+      stars: 5,
+    },
+    {
+      name: "Sandipan Bhaumik",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a-/ALV-UjWVjENlV3RdiBI-rthV9XRTnM74sD3k0QrntmRUwmJLg5PYkOo=s40-c-rp-mo-br100",
+      text: "Very much satisfied with his services. highly recomended",
+      stars: 5,
+    },
+    {
+      name: "Piya Das",
       companyLogo: googleImage,
       authorImage: userImage,
-      text: "Amazing customer service and a very user-friendly platform. We’ve been using this for several months now, and it's been a game-changer.",
+      text: "Happy with the ITR filling service. Quick and fast process. Thanks alot",
+      stars: 5,
+    },
+
+    {
+      name: "Ratna Banerjee",
+      companyLogo: googleImage,
+      authorImage:
+        "https://lh3.googleusercontent.com/a/ACg8ocKfwlRGU5MoU50aff1OyuY6VXTAnqStTWA5wuy1-LORAQVgEg=s40-c-rp-mo-br100",
+      text: "Director and all staffs are very cooperative. I am fully satisfied.",
       stars: 5,
     },
   ];
@@ -125,7 +251,7 @@ const Home = () => {
           </div>
 
           <div className="__rating">
-            <img src={avtar_icon} alt="avtar_icon" />
+            <img src={Pepols} alt="avtar_icon" />
 
             <div className="__happy">
               <h2>{customerCount.toLocaleString()}</h2>
